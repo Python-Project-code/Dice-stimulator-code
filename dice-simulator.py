@@ -1,18 +1,12 @@
-# Dice stimulator code
-
-El objetivo de este proyecto es hacer un similador de un dado de 6 caras.
-
-Hemos usado la libería `random` para generar aleatoriamente número del 1 al 6.
-~~~python
 import random
+print("This is a dice stimulator y")
+x = "y"
 
-number = random.randint(1,6)
-~~~
 
-Si se imprime por pantalla un dado con el número generado.
+while x == "y":
+    number = random.randint(1,6)
 
-~~~python
- if number == 1:
+    if number == 1:
         print("----------")
         print("|        |")
         print("|    O   |")
@@ -48,4 +42,5 @@ Si se imprime por pantalla un dado con el número generado.
         print("| O    O |")
         print("| O    O |")
         print("----------")
-~~~
+    x = input("Press y to roll again ")
+    
